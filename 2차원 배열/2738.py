@@ -4,19 +4,12 @@ a=[]
 b=[]
 # c=[]
 for i in range(n):
-    a += [list(input().split())]
+    a += [[int(x) for x in input().split()]]
 
 for i in range(n):
-    b += [list(input().split())]
+    b += [[int(y) for y in input().split()]]
 
-print(type(a))
-# print(b)
-# for i in range(n):
-#     for j in range(m):
-#         print(a[i][j])
-#         print(b[i][j])
-#         c = a[i][j] + b[i][j]
-#         print(c)
-# for i in range(n):
-#     for j in range(m):
-#         print(c[i][j])
+for i in range(n):
+    for j in range(m):
+        print(a[i][j]+b[i][j],end=" ")
+    print()
